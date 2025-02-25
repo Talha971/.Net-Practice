@@ -411,11 +411,11 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //}
 
 ///////////////////////////////////////////////////////// max and min in an array //////////////////////////////////////
-//int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6,1 } ;
+//int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
 //int max = arr[0];
-//for (int i = 1; i < arr.Length; i++) 
+//for (int i = 1; i < arr.Length; i++)
 //{
-//    if(arr[i] > max)
+//    if (arr[i] > max)
 //    {
 //        max = arr[i];
 //    }
@@ -445,7 +445,7 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //    }
 //}
 
-//////////////////////////////////////////////////// //// altenative odd with using loop////////////////////////////////
+///////////////////////////////////////////////////////// altenative odd with using loop////////////////////////////////
 
 //by flag //
 //int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
@@ -484,21 +484,54 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //    }
 //}
 
-//////////////////////////////////////////////////////// altenative odd without using loop////////////////////////////////
-int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
-Console.Write("Alternate Odd: ");
-int count = 0;
+////////////////////////////////////////////////////////// Check if the no is prime ////////////////////////////////
+//using System;
 
-for (int i = 0; i < arr.Length; i++)
-{
-    if (arr[i] % 2 == 1)
-    {
-        if (count % 2 == 0)
-        {
-            Console.WriteLine(arr[i]);
+//class Program
+//{
+//    static bool IsPrime(int num)
+//    {
+//        if (num < 2) return false;
+//        for (int i = 2; i * i <= num; i++) 
+//        {
+//            if (num % i == 0) return false;
+//        }
+//        return true;
+//    }
 
+//    static void Main()
+//    {
+//        int[] arr = { 2,10,6,9,33, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 };
 
-        }
-        count++;
-    }
-}
+//        foreach (int k in arr)
+//        {
+//            if (IsPrime(k))
+//                Console.WriteLine(k);
+//        }
+//    }
+//}
+
+//////////////////////////////////////////////////////// altenative odd in reverse without using loop////////////////////////////////
+//using System;
+
+//class Program
+//{
+//    static void PrintAlternateOddReverse(int[] arr, int index, bool print)
+//    {
+//        if (index < 0)  // Stop when the index goes below 0
+//            return;
+
+//        if (arr[index] % 2 != 0 && print)
+//            Console.Write(arr[index] + " ");
+
+//        PrintAlternateOddReverse(arr, index - 1, arr[index] % 2 == 1 ? !print : print);  // Traverse backwards
+//    }
+
+//    static void Main()
+//    {
+//        int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
+//        Console.Write("Alternate Odd (in reverse): ");
+//        PrintAlternateOddReverse(arr, arr.Length - 1, true);
+//    }
+//}
+
