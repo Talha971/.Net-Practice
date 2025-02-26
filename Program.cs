@@ -138,20 +138,20 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //}
 
 
-////*
-////**
-////***
-////****
-////*****
+//*
+//**
+//***
+//****
+//*****
 
-//for (int i = 1; i <= 5; i++)
-//{
-//    for (int j = 0; j < i; j++)
-//    {
-//        Console.Write("*");
-//    }
-//    Console.WriteLine();
-//}
+for (int i = 1; i <= 5; i++)
+{
+    for (int j = 0; j < i; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
 
 // *
 //* *
@@ -298,7 +298,7 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 
 
 
-/////////////////////////////////////////2nd method//////////////////////////////
+///////////////////////////////////////// 2nd method //////////////////////////////
 //using System;
 ////using System.Collections.Generic;
 //int[] arr = { 1, 2, 2, 3, 7, 2, 5, 4, 2, 3, 3, 4, 4, 3, 7 };
@@ -321,12 +321,17 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //    Console.WriteLine($"{kvp.Key} : {kvp.Value} ");
 //}
 
-/////////////////////////////////////////3rd method //////////////////////////////
+///////////////////////////////////////// 3rd method //////////////////////////////
 //using System;
 ////using System.Collections.Generic;
 //int[] arr = { 1, 5, 6, 2, 3, 1, 5, 3 };
 //HashSet<int> seen = new HashSet<int>();
 //HashSet<int> duplicate = new HashSet<int>();
+
+//////for strings
+////HashSet<char> seen = new HashSet<char>();
+////HashSet<char> duplicate = new HashSet<char>();
+
 //for (int i = 0; i < arr.Length; i++)
 //{
 //    if (seen.Contains(arr[i]))
@@ -410,7 +415,7 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //    Console.Write(name[i]);
 //}
 
-///////////////////////////////////////////////////////// max and min in an array //////////////////////////////////////
+/////////////////////////////////////////////////////////// max and min in an array //////////////////////////////////////
 //int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
 //int max = arr[0];
 //for (int i = 1; i < arr.Length; i++)
@@ -423,7 +428,7 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //Console.WriteLine(max);
 
 
-//////////////////////////////////////////////////////// odd / Even///////////////////////////////////////////////
+////////////////////////////////////////////////////////// odd / Even///////////////////////////////////////////////
 
 //int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
 //Console.Write("Even: ");
@@ -438,18 +443,18 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
 //for (int i = 0; i < arr.Length; i++)
 //{
-//    if (arr[i] % 2 == 0) 
+//    if (arr[i] % 2 == 0)
 //    {
 
 //        Console.WriteLine(arr[i]);
 //    }
 //}
 
-///////////////////////////////////////////////////////// altenative odd with using loop////////////////////////////////
+/////////////////////////////////////////////////////////// altenative odd with using loop////////////////////////////////
 
-//by flag //
+////by flag //
 //int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
-//bool print = true;  
+//bool print = true;
 //for (int i = 0; i < arr.Length; i++)
 
 //{
@@ -465,14 +470,14 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //    }
 //}
 
-//by COUNT VARIALE
+////by COUNT VARIALE
 //int[] arr = { 10, 2, 11, 9, 33, 40, 5, 6, 1 };
 //Console.Write("Alternate Odd: ");
 //int count = 0;
 
 //for (int i = 0; i < arr.Length; i++)
 //{
-//    if (arr[i] %2==1)
+//    if (arr[i] % 2 == 1)
 //    {
 //        if (count % 2 == 0)
 //        {
@@ -484,34 +489,7 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //    }
 //}
 
-////////////////////////////////////////////////////////// Check if the no is prime ////////////////////////////////
-//using System;
-
-//class Program
-//{
-//    static bool IsPrime(int num)
-//    {
-//        if (num < 2) return false;
-//        for (int i = 2; i * i <= num; i++) 
-//        {
-//            if (num % i == 0) return false;
-//        }
-//        return true;
-//    }
-
-//    static void Main()
-//    {
-//        int[] arr = { 2,10,6,9,33, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 };
-
-//        foreach (int k in arr)
-//        {
-//            if (IsPrime(k))
-//                Console.WriteLine(k);
-//        }
-//    }
-//}
-
-//////////////////////////////////////////////////////// altenative odd in reverse without using loop////////////////////////////////
+////////////////////////////////////////////////////////// altenative odd in reverse without using loop////////////////////////////////
 //using System;
 
 //class Program
@@ -534,4 +512,57 @@ Console.WriteLine(Convert.ToInt32(myNum));*/
 //        PrintAlternateOddReverse(arr, arr.Length - 1, true);
 //    }
 //}
+
+////////////////////////////////////////////////////////// Check if the no is prime ////////////////////////////////
+//using System;
+
+//class Program
+//{
+//    static bool IsPrime(int num)
+//    {
+//        if (num < 2) return false;
+//        for (int i = 2; i * i <= num; i++)
+//        {
+//            if (num % i == 0) return false;
+//        }
+//        return true;
+//    }
+
+//    static void Main()
+//    {
+//        int[] arr = { 2, 10, 6, 9, 33, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 };
+
+//        foreach (int k in arr)
+//        {
+//            if (IsPrime(k))
+//                Console.WriteLine(k);
+//        }
+//    }
+//}
+
+
+
+///////////////////////////////////////////////////////length of a string///////////////////////////////////////////////////
+
+//string name = "talha";
+//int count = 0;
+//for (int i = 0; i < name.Length; i++)
+//{
+//    count++;
+//}
+//Console.WriteLine(count);
+
+
+///////////////////////////////////////////////////////Palindrome///////////////////////////////////////////////////
+///
+string name = "noonogon";
+bool isPalindrome = true;
+for (int i = 0; i < name.Length / 2; i++)
+{
+    if (name[i] != name[name.Length - 1 - i])
+    {
+        isPalindrome = false;
+    }
+}
+Console.WriteLine(isPalindrome ? "true" : false);
 
